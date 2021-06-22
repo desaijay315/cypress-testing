@@ -1,13 +1,13 @@
 {
     "chromeWebSecurity":false,
-    "defaultCommandTimeout": 10000,
+    "defaultCommandTimeout": 40000,
     "pageLoadTimeout": 30000,
     "reporter": "mochawesome",
     
     "env": {
       "url": "https://rahulshettyacademy.com"
     },
-    "testFiles": "**/*.feature",
+    "testFiles": "**/*.js",
   
     "retries": {
       

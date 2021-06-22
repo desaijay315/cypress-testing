@@ -1,0 +1,195 @@
+{
+    "articles": [
+      {
+        "title": "this is a test",
+        "slug": "this-is-a-test-s00mi6",
+        "body": "this is a test for testing",
+        "createdAt": "2021-06-22T14:25:31.050Z",
+        "updatedAt": "2021-06-22T14:25:31.050Z",
+        "tagList": [
+          
+        ],
+        "description": "Testing",
+        "author": {
+          "username": "xavi",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "this is a test",
+        "slug": "this-is-a-test-rrfgiq",
+        "body": "this is a test for testing",
+        "createdAt": "2021-06-22T14:24:22.557Z",
+        "updatedAt": "2021-06-22T14:24:22.557Z",
+        "tagList": [
+          
+        ],
+        "description": "Testing",
+        "author": {
+          "username": "xavi",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "this is a test",
+        "slug": "this-is-a-test-bird5r",
+        "body": "this is a test for testing",
+        "createdAt": "2021-06-22T14:23:09.295Z",
+        "updatedAt": "2021-06-22T14:23:09.295Z",
+        "tagList": [
+          
+        ],
+        "description": "Testing",
+        "author": {
+          "username": "xavi",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "this is a test",
+        "slug": "this-is-a-test-rzc6ff",
+        "body": "this is a test for testing",
+        "createdAt": "2021-06-22T14:20:31.639Z",
+        "updatedAt": "2021-06-22T14:20:31.639Z",
+        "tagList": [
+          
+        ],
+        "description": "Testing",
+        "author": {
+          "username": "xavi",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "this is a test",
+        "slug": "this-is-a-test-85qwbh",
+        "body": "this is a test for testing",
+        "createdAt": "2021-06-22T14:19:30.644Z",
+        "updatedAt": "2021-06-22T14:19:30.644Z",
+        "tagList": [
+          
+        ],
+        "description": "Testing",
+        "author": {
+          "username": "xavi",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "this is a test",
+        "slug": "this-is-a-test-vbldpj",
+        "body": "this is a test for testing",
+        "createdAt": "2021-06-22T14:18:27.808Z",
+        "updatedAt": "2021-06-22T14:18:27.808Z",
+        "tagList": [
+          
+        ],
+        "description": "Testing",
+        "author": {
+          "username": "xavi",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "Test",
+        "slug": "test-3rib7f",
+        "body": "Test 2",
+        "createdAt": "2021-06-22T14:16:33.229Z",
+        "updatedAt": "2021-06-22T14:16:33.229Z",
+        "tagList": [
+          
+        ],
+        "description": "Test 1",
+        "author": {
+          "username": "lalo22",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      },
+      {
+        "title": "RamosSeTeEcharaDeMenos",
+        "slug": "ramosseteecharademenos-6tca9y",
+        "body": "You rock boy!",
+        "createdAt": "2021-06-22T14:16:07.071Z",
+        "updatedAt": "2021-06-22T14:16:07.071Z",
+        "tagList": [
+          
+        ],
+        "description": "A legend",
+        "author": {
+          "username": "joangda",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 1
+      },
+      {
+        "title": "Test",
+        "slug": "test-irwf21",
+        "body": "Test 2",
+        "createdAt": "2021-06-22T14:15:22.433Z",
+        "updatedAt": "2021-06-22T14:15:22.433Z",
+        "tagList": [
+          
+        ],
+        "description": "Test 1",
+        "author": {
+          "username": "lalo22",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 1
+      },
+      {
+        "title": "sadf",
+        "slug": "sadf-6ufgsj",
+        "body": "asdf",
+        "createdAt": "2021-06-22T14:14:03.725Z",
+        "updatedAt": "2021-06-22T14:14:03.725Z",
+        "tagList": [
+          
+        ],
+        "description": "asdf",
+        "author": {
+          "username": "news",
+          "bio": null,
+          "image": "/images/smiley-cyrus.jpg",
+          "following": false
+        },
+        "favorited": false,
+        "favoritesCount": 0
+      }
+    ],
+    "articlesCount": 500
+  }

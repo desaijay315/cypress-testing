@@ -1,5 +1,7 @@
 {
   "name" :"bob",
   "gender":"Female",
-  "productName": ["Blackberry","Nokia Edge"]
+  "productName": ["Blackberry","Nokia Edge"],
+  "email": "desai26jay@gmail.com",
+  "password": "admin123"
  }

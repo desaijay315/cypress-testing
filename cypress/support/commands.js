@@ -45,3 +45,31 @@ Cypress.Commands.add('selectProduct', (productName) => {
   })
  })
 
+
+
+
+ Cypress.Commands.add('loginToApplication', () => {
+   
+  
+    // cy.intercept("GET", "https://conduit.productionready.io/api/tags", { fixture: 'tags.json' }).as("dataGetFirst");
+  
+    // cy.intercept("GET", "https://conduit.productionready.io/api/articles?limit=10&offset=0", {fixture: 'articles.json'}).as("dataGetFirstArticle");
+
+
+    //cy.intercept({method: "POST", url: "https://conduit.productionready.io/api/users/login"}, {fixture: 'user.json'}).as("loginIntercept"); //real -> fixture (remove)
+    // cy.intercept({method: "GET", url: "https://conduit.productionready.io/api/articles/feed?limit=10&offset=0"}, {fixture: 'articles.json'}).as("feedArticle"); //after login
+ 
+
+   cy.visit('https://angular.realworld.io/'); //site
+  //  cy.wait(["@dataGetFirst", "@dataGetFirstArticle"]);
+   cy.get('.nav').contains('Sign in').click();
+   cy.fixture('example.json').as("data");
+
+   cy.get('@data').then((user) => {
+     cy.get('[placeholder="Email"]').type(user.email)
+     cy.get('[placeholder="Password"]').type(user.password);
+     cy.get('form').submit(); 
+    //  cy.wait("@loginIntercept");
+  })
+ })
+
