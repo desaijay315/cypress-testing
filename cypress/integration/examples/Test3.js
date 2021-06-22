@@ -15,7 +15,6 @@ describe('My Third Test Suite', function(){
         cy.get("select").select('option2').should("have.value", "option2")
 
         //dynamic test
-
         cy.get('#autocomplete').type('ind')
 
         cy.get('.ui-menu-item div').each(($el, index, $list) => {
