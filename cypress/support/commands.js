@@ -48,28 +48,35 @@ Cypress.Commands.add('selectProduct', (productName) => {
 
 
 
- Cypress.Commands.add('loginToApplication', () => {
-   
-  
-    // cy.intercept("GET", "https://conduit.productionready.io/api/tags", { fixture: 'tags.json' }).as("dataGetFirst");
-  
-    // cy.intercept("GET", "https://conduit.productionready.io/api/articles?limit=10&offset=0", {fixture: 'articles.json'}).as("dataGetFirstArticle");
+//  Cypress.Commands.add('loginToApplication', () => {
+//    cy.visit('https://angular.realworld.io/');
+//    cy.get('.nav').contains('Sign in').click();
+//    cy.fixture('example.json').as("data");
 
+//    cy.get('@data').then((user) => {
+//      cy.get('[placeholder="Email"]').type(user.email)
+//      cy.get('[placeholder="Password"]').type(user.password);
+//      cy.get('form').submit(); 
+//   })
+//  })
 
-    //cy.intercept({method: "POST", url: "https://conduit.productionready.io/api/users/login"}, {fixture: 'user.json'}).as("loginIntercept"); //real -> fixture (remove)
-    // cy.intercept({method: "GET", url: "https://conduit.productionready.io/api/articles/feed?limit=10&offset=0"}, {fixture: 'articles.json'}).as("feedArticle"); //after login
- 
+Cypress.Commands.add('loginToApplication', () => {
+  const userCred = {
+    "user": {
+      "email": "desai26jay@gmail.com",
+      "password": "admin123"
+    }
+  }
 
-   cy.visit('https://angular.realworld.io/'); //site
-  //  cy.wait(["@dataGetFirst", "@dataGetFirstArticle"]);
-   cy.get('.nav').contains('Sign in').click();
-   cy.fixture('example.json').as("data");
-
-   cy.get('@data').then((user) => {
-     cy.get('[placeholder="Email"]').type(user.email)
-     cy.get('[placeholder="Password"]').type(user.password);
-     cy.get('form').submit(); 
-    //  cy.wait("@loginIntercept");
+  cy.request('POST', 'https://conduit.productionready.io/api/users/login', userCred)
+    .its('body').then(body => {
+        const token = body.user.token
+      cy.wrap(token).as('token')
+      cy.visit('https://angular.realworld.io/',{
+          onBeforeLoad(win){
+            win.localStorage.setItem('jwtToken', token)
+          }
+      });
   })
- })
+})
 

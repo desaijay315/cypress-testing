@@ -1,0 +1,232 @@
+[
+  {
+    "description": "    application Regression",
+    "keyword": "Feature",
+    "name": "End to end Blog Site validation",
+    "line": 1,
+    "id": "end-to-end-blog-site-validation",
+    "tags": [],
+    "uri": "blog.feature",
+    "elements": [
+      {
+        "id": "end-to-end-blog-site-validation;create-a-new-article",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Create a new article",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 4
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "I open new article page",
+            "result": {
+              "status": "passed",
+              "duration": 2190000000
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "title",
+                      "description",
+                      "body"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "testing the blog site",
+                      "testing the blog site",
+                      "testing the blog site"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I create the new article",
+            "result": {
+              "status": "passed",
+              "duration": 464000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "Validate the new article created & the forms behaviour",
+            "result": {
+              "status": "passed",
+              "duration": 3642000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-blog-site-validation;check-the-tags-on-the-home-page",
+        "keyword": "Scenario",
+        "line": 14,
+        "name": "Check the tags on the home page",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 13
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "I open home page",
+            "result": {
+              "status": "passed",
+              "duration": 1953000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 16,
+            "name": "I check the tags",
+            "result": {
+              "status": "passed",
+              "duration": 18000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "validate the tags generated",
+            "result": {
+              "status": "passed",
+              "duration": 1276000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-blog-site-validation;verify-the-global-feed-article-likes-count",
+        "keyword": "Scenario",
+        "line": 21,
+        "name": "Verify the global feed article likes count",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 20
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 22,
+            "name": "I open home page and go to global feed",
+            "result": {
+              "status": "passed",
+              "duration": 1801000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I check the article count",
+            "result": {
+              "status": "passed",
+              "duration": 2937000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 24,
+            "name": "I click on the like button",
+            "result": {
+              "status": "passed",
+              "duration": 402000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "Then like count of the article should increment by one",
+            "result": {
+              "status": "passed",
+              "duration": 363000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "end-to-end-blog-site-validation;delete-the-newly-created-article",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Delete the newly created article",
+        "tags": [
+          {
+            "name": "@Regression",
+            "line": 28
+          }
+        ],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "I open home page and go to global feed",
+            "result": {
+              "status": "passed",
+              "duration": 1441000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 31,
+            "name": "I click on the newly created article",
+            "result": {
+              "status": "passed",
+              "duration": 3060000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I delete the article",
+            "result": {
+              "status": "passed",
+              "duration": 687000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "validate the deleted article",
+            "result": {
+              "status": "passed",
+              "duration": 1038000000
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

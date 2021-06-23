@@ -7,7 +7,7 @@
     "env": {
       "url": "https://rahulshettyacademy.com"
     },
-    "testFiles": "**/*.js",
+    "testFiles": "**/*.feature",
   
     "retries": {
       
