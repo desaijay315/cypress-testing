@@ -68,11 +68,12 @@ Cypress.Commands.add('loginToApplication', () => {
     }
   }
 
-  cy.request('POST', 'https://conduit.productionready.io/api/users/login', userCred)
+  cy.request('POST', Cypress.env('apiUrl') + 'users/login', userCred)
     .its('body').then(body => {
         const token = body.user.token
       cy.wrap(token).as('token')
-      cy.visit('https://angular.realworld.io/',{
+
+       cy.visit(Cypress.env('url'),{
           onBeforeLoad(win){
             win.localStorage.setItem('jwtToken', token)
           }

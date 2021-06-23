@@ -20,7 +20,7 @@ When('I create the new article', () => {
 
     cy.get('@token').then(token => {
         cy.request({
-            url: 'https://conduit.productionready.io/api/articles/',
+            url: Cypress.env('apiUrl') + 'articles/',
             headers: {'Authorization': 'Token ' + token},
             method: 'POST',
             body: requestBody
@@ -47,7 +47,7 @@ Given('I open home page' , () =>{
 })
 
 When('I check the tags', () =>{
-    cy.intercept("GET", "https://conduit.productionready.io/api/tags", { fixture: 'tags.json' }).as("dataGetFirst");
+    cy.intercept("GET", Cypress.env('apiUrl') + "tags", { fixture: 'tags.json' }).as("dataGetFirst");
 })
 
 Then('validate the tags generated' , () =>{
@@ -74,7 +74,7 @@ And('I check the article count', () => {
 When('I click on the like button' ,() => {
     cy.fixture('articles').then(data => {
         const link  = data.articles[1].slug
-        cy.intercept('POST', `https://conduit.productionready.io/api/articles/${link}/favorite`, data)
+        cy.intercept('POST', Cypress.env('apiUrl') + `articles/${link}/favorite`, data)
     })
 
     cy.get('app-article-list button').eq(0).click()
@@ -102,7 +102,7 @@ And('I delete the article', () => {
 Then('validate the deleted article', () =>{
     cy.get('@token').then(token => {
         cy.request({
-            url: 'https://conduit.productionready.io/api/articles?limit=10&offset=0',
+            url: Cypress.env('apiUrl') + 'articles?limit=10&offset=0',
             headers: {'Authorization': 'Token ' + token},
             method: 'GET'
         }).its('body')

@@ -8,7 +8,7 @@ describe('Fully automated end to end testing suite', function(){
 
     it('verify correct request and response', function(){
         cy.log('After Login Successful')
-        cy.intercept('POST', 'https://conduit.productionready.io/api/articles/').as("postArticle")
+        cy.intercept('POST', Cypress.env('apiUrl') + 'articles/').as("postArticle")
        
         cy.contains('New Article').click();
         cy.get('[formcontrolname="title"]').type('hello');
@@ -26,7 +26,7 @@ describe('Fully automated end to end testing suite', function(){
     })
 
     it('should show the tags as mentioned in the tags object', () => {
-        cy.intercept("GET", "https://conduit.productionready.io/api/tags", { fixture: 'tags.json' }).as("dataGetFirst");
+        cy.intercept("GET", Cypress.env('apiUrl') + "tags", { fixture: 'tags.json' }).as("dataGetFirst");
         cy.get('.tag-list')
         .should('contain', 'HuManIty')
         .and('contain', 'Gandhi')
@@ -35,8 +35,8 @@ describe('Fully automated end to end testing suite', function(){
     })
     
     it('verify the gobal feed articles like count', () =>{
-        cy.intercept("GET", "https://conduit.productionready.io/api/articles/feed?limit=10&offset=0", { fixture: 'feed.json' }).as("feedArticles");
-        cy.intercept("GET", "https://conduit.productionready.io/api/articles?limit=10&offset=0", { fixture: 'articles.json' }).as("globalArticles");
+        cy.intercept("GET", Cypress.env('apiUrl') + "articles/feed?limit=10&offset=0", { fixture: 'feed.json' }).as("feedArticles");
+        cy.intercept("GET", Cypress.env('apiUrl') + "articles?limit=10&offset=0", { fixture: 'articles.json' }).as("globalArticles");
 
         cy.contains(/Global Feed/i).click()
         cy.get('app-article-list button').then(listOfButtons => {
@@ -47,7 +47,7 @@ describe('Fully automated end to end testing suite', function(){
 
         cy.fixture('articles').then(data => {
             const link  = data.articles[1].slug
-            cy.intercept('POST', `https://conduit.productionready.io/api/articles/${link}/favorite`, data)
+            cy.intercept('POST', Cypress.env('apiUrl') + `articles/${link}/favorite`, data)
         })
 
         cy.get('app-article-list button')
@@ -74,7 +74,7 @@ describe('Fully automated end to end testing suite', function(){
 
         cy.get('@token').then(token => {
             cy.request({
-                url: 'https://conduit.productionready.io/api/articles/',
+                url: Cypress.env('apiUrl') + 'articles/',
                 headers: {'Authorization': 'Token ' + token},
                 method: 'POST',
                 body: requestBody
@@ -91,7 +91,7 @@ describe('Fully automated end to end testing suite', function(){
 
             //verify whether the title is actually delete from the API or Not
             cy.request({
-                url: 'https://conduit.productionready.io/api/articles?limit=10&offset=0',
+                url: Cypress.env('apiUrl') + 'articles?limit=10&offset=0',
                 headers: {'Authorization': 'Token ' + token},
                 method: 'GET'
             }).its('body')
