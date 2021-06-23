@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "cypress:run_brow": "npx cypress run",
     "cypress:run": "npm run prereport && npx cypress run && npm run junit:merge && npm run mochawesome:merge && npm run cucumber:report",
     "cypress:run_qa": "npx cypress run --env configFile=qa",
     "cypress:run_staging": "npx cypress run --env configFile=staging",
@@ -15,7 +16,8 @@
     "junit:merge": "npx junit-merge -d cypress/results/junit -o cypress/results/junit/result.xml",
     "cucumber:report": "node cucumber-html-report.js",
     "delete:cucmberreport": "rimraf reports/* || true",
-    "delete:mochawesomereport": "rimraf mochawesome-report/* || true"
+    "delete:mochawesomereport": "rimraf mochawesome-report/* || true",
+    "cypress:run_browser": "npm run cypress:run_brow -- --browser firefox && npm run cypress:run_brow -- --browser chrome && npm run cypress:run_brow -- --browser edge"
   },
   "keywords": [],
   "author": "",

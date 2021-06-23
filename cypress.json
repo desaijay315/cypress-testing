@@ -1,5 +1,4 @@
 {
-    "chromeWebSecurity":false,
     "defaultCommandTimeout": 40000,
     "pageLoadTimeout": 30000,
     "env": {
