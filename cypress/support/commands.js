@@ -61,10 +61,11 @@ Cypress.Commands.add('selectProduct', (productName) => {
 //  })
 
 Cypress.Commands.add('loginToApplication', () => {
+  
   const userCred = {
     "user": {
-      "email": "desai26jay@gmail.com",
-      "password": "admin123"
+      "email": Cypress.env('username'),
+      "password": Cypress.env('password')
     }
   }
 

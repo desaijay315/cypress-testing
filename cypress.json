@@ -2,17 +2,19 @@
     "chromeWebSecurity":false,
     "defaultCommandTimeout": 40000,
     "pageLoadTimeout": 30000,
-    "reporter": "mochawesome",
-    
     "env": {
       "url": "https://angular.realworld.io/",
-      "apiUrl": "https://conduit.productionready.io/api/"
+      "apiUrl": "https://conduit.productionready.io/api/",
+      "username": "desai26jay@gmail.com",
+      "password": "admin123"
     },
-    "testFiles": "**/*.js",
     "retries": {
-      
-      "runMode": 1
+      "runMode": 2,
+      "openMode": 1
     },
-    "projectId": "a5zbka"
+    "reporter": "cypress-multi-reporters",
+    "reporterOptions": {
+      "configFile": "reporter-config.json"
+    }
   }
   

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<testsuites>
+<testsuite name="Root Suite" timestamp="2021-06-23T12:03:48" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Fully automated end to end testing suite" timestamp="2021-06-23T12:03:48" tests="4" time="16.5320" failures="0">
+  
+  <testcase name="Fully automated end to end testing suite verify correct request and response" time="4.7780" classname="verify correct request and response"></testcase>
+  
+  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="2.2520" classname="should show the tags as mentioned in the tags object"></testcase>
+  
+  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="3.3730" classname="verify the gobal feed articles like count"></testcase>
+  
+  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="6.1290" classname="delete the newly created articles"></testcase>
+  
+</testsuite>
+
+
+<testsuite name="Root Suite" timestamp="2021-06-23T12:02:25" tests="0" file="cypress/integration/examples/BDD/blog.feature" time="0.0000" failures="0"></testsuite>
+<testsuite name="End to end Blog Site validation" timestamp="2021-06-23T12:02:25" tests="4" time="23.9280" failures="0">
+  
+  <testcase name="End to end Blog Site validation Create a new article" time="8.7830" classname="Create a new article"></testcase>
+  
+  <testcase name="End to end Blog Site validation Check the tags on the home page" time="3.3340" classname="Check the tags on the home page"></testcase>
+  
+  <testcase name="End to end Blog Site validation Verify the global feed article likes count" time="5.2990" classname="Verify the global feed article likes count"></testcase>
+  
+  <testcase name="End to end Blog Site validation Delete the newly created article" time="6.5120" classname="Delete the newly created article"></testcase>
+  
+</testsuite>
+
+</testsuites>

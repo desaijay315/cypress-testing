@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2021-06-23T12:02:25.554Z",
+    "end": "2021-06-23T12:02:56.405Z",
+    "duration": 30851,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "36f8281f-8d23-4408-a7ec-9b2c27c15e69",
+      "title": "",
+      "fullFile": "cypress/integration/examples/BDD/blog.feature",
+      "file": "cypress/integration/examples/BDD/blog.feature",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "dd7ac8ef-8d22-4d40-94d8-cace427baba7",
+          "title": "End to end Blog Site validation",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Create a new article",
+              "fullTitle": "End to end Blog Site validation Create a new article",
+              "timedOut": null,
+              "duration": 8783,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "5b9014be-5fa4-4972-b9f2-adf2cb9668a5",
+              "parentUUID": "dd7ac8ef-8d22-4d40-94d8-cace427baba7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Check the tags on the home page",
+              "fullTitle": "End to end Blog Site validation Check the tags on the home page",
+              "timedOut": null,
+              "duration": 3334,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "15496dbb-5a1c-4833-b98c-cf51cb93a194",
+              "parentUUID": "dd7ac8ef-8d22-4d40-94d8-cace427baba7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Verify the global feed article likes count",
+              "fullTitle": "End to end Blog Site validation Verify the global feed article likes count",
+              "timedOut": null,
+              "duration": 5299,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "b651bc42-34ff-47de-a595-4220082ab785",
+              "parentUUID": "dd7ac8ef-8d22-4d40-94d8-cace427baba7",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Delete the newly created article",
+              "fullTitle": "End to end Blog Site validation Delete the newly created article",
+              "timedOut": null,
+              "duration": 6512,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "const state = window.testState;\nreturn cy\n  .then(() => state.onStartScenario(scenario, indexedSteps))\n  .then(() =>\n    resolveAndRunBeforeHooks.call(this, scenario.tags, state.feature.name)\n  )\n  .then(() =>\n    indexedSteps.forEach((step) =>\n      stepTest.call(this, state, step, rowData)\n    )\n  )\n  .then(() => state.onFinishScenario(scenario));",
+              "err": {},
+              "uuid": "072d00c4-80b5-4c66-ba78-c442264c67a2",
+              "parentUUID": "dd7ac8ef-8d22-4d40-94d8-cace427baba7",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "5b9014be-5fa4-4972-b9f2-adf2cb9668a5",
+            "15496dbb-5a1c-4833-b98c-cf51cb93a194",
+            "b651bc42-34ff-47de-a595-4220082ab785",
+            "072d00c4-80b5-4c66-ba78-c442264c67a2"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 23928,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

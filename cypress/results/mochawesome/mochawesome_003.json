@@ -5,9 +5,9 @@
     "passes": 4,
     "pending": 0,
     "failures": 0,
-    "start": "2021-06-23T11:22:09.380Z",
-    "end": "2021-06-23T11:22:32.575Z",
-    "duration": 23195,
+    "start": "2021-06-23T12:03:48.091Z",
+    "end": "2021-06-23T12:04:07.287Z",
+    "duration": 19196,
     "testsRegistered": 4,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "439bc390-3937-43dc-819a-a886eeb1a7d6",
+      "uuid": "c9046844-662f-489a-8aaa-118ff87d2042",
       "title": "",
       "fullFile": "cypress/integration/examples/FullyAutomated.js",
       "file": "cypress/integration/examples/FullyAutomated.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9d8cd029-e486-4496-bb3c-b5a6e87c1e27",
+          "uuid": "a48f7c45-6f34-41ac-b3c9-9f9645f6e5c6",
           "title": "Fully automated end to end testing suite",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "verify correct request and response",
               "fullTitle": "Fully automated end to end testing suite verify correct request and response",
               "timedOut": null,
-              "duration": 5710,
+              "duration": 4778,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.log('After Login Successful');\ncy.intercept('POST', Cypress.env('apiUrl') + 'articles/').as(\"postArticle\");\ncy.contains('New Article').click();\ncy.get('[formcontrolname=\"title\"]').type('hello');\ncy.get('[formcontrolname=\"description\"]').type('hello');\ncy.get('[formcontrolname=\"body\"]').type('hello');\ncy.contains('Publish Article').click();\ncy.wait('@postArticle');\ncy.get('@postArticle').then(function (xhr) {\n  expect(xhr.response.statusCode).to.equal(200);\n  expect(xhr.request.body.article.title).to.equal('hello');\n  expect(xhr.request.body.article.body).to.equal('hello');\n  expect(xhr.request.body.article.description).to.equal('hello');\n});",
               "err": {},
-              "uuid": "c87d8bbd-7ab7-4546-822c-a954f632fbc5",
-              "parentUUID": "9d8cd029-e486-4496-bb3c-b5a6e87c1e27",
+              "uuid": "3e24f098-a2b1-4fa8-86b7-306faf5addeb",
+              "parentUUID": "a48f7c45-6f34-41ac-b3c9-9f9645f6e5c6",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "should show the tags as mentioned in the tags object",
               "fullTitle": "Fully automated end to end testing suite should show the tags as mentioned in the tags object",
               "timedOut": null,
-              "duration": 1961,
+              "duration": 2252,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.intercept(\"GET\", Cypress.env('apiUrl') + \"tags\", {\n  fixture: 'tags.json'\n}).as(\"dataGetFirst\");\ncy.get('.tag-list').should('contain', 'HuManIty').and('contain', 'Gandhi').and('contain', 'HITLER').and('contain', 'SIDA');",
               "err": {},
-              "uuid": "abe10000-7ef1-4744-9071-fdf72ef00c6a",
-              "parentUUID": "9d8cd029-e486-4496-bb3c-b5a6e87c1e27",
+              "uuid": "56b0d309-d3e3-4976-b1c6-9075446dd213",
+              "parentUUID": "a48f7c45-6f34-41ac-b3c9-9f9645f6e5c6",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "verify the gobal feed articles like count",
               "fullTitle": "Fully automated end to end testing suite verify the gobal feed articles like count",
               "timedOut": null,
-              "duration": 3279,
+              "duration": 3373,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -83,8 +83,8 @@
               "context": null,
               "code": "cy.intercept(\"GET\", Cypress.env('apiUrl') + \"articles/feed?limit=10&offset=0\", {\n  fixture: 'feed.json'\n}).as(\"feedArticles\");\ncy.intercept(\"GET\", Cypress.env('apiUrl') + \"articles?limit=10&offset=0\", {\n  fixture: 'articles.json'\n}).as(\"globalArticles\");\ncy.contains(/Global Feed/i).click();\ncy.get('app-article-list button').then(function (listOfButtons) {\n  cy.log(listOfButtons);\n  expect(listOfButtons[0]).to.contain('5');\n  expect(listOfButtons[1]).to.contain('10');\n});\ncy.fixture('articles').then(function (data) {\n  var link = data.articles[1].slug;\n  cy.intercept('POST', Cypress.env('apiUrl') + \"articles/\".concat(link, \"/favorite\"), data);\n});\ncy.get('app-article-list button').eq(0).click().should('contain', '6');\ncy.get('app-article-list button').eq(1).click().should('contain', '11');",
               "err": {},
-              "uuid": "cd1db557-a889-440e-8c6b-34c17a578c1a",
-              "parentUUID": "9d8cd029-e486-4496-bb3c-b5a6e87c1e27",
+              "uuid": "61bbe9e4-b906-4704-ad46-95245530461f",
+              "parentUUID": "a48f7c45-6f34-41ac-b3c9-9f9645f6e5c6",
               "isHook": false,
               "skipped": false
             },
@@ -92,7 +92,7 @@
               "title": "delete the newly created articles",
               "fullTitle": "Fully automated end to end testing suite delete the newly created articles",
               "timedOut": null,
-              "duration": 7344,
+              "duration": 6129,
               "state": "passed",
               "speed": "slow",
               "pass": true,
@@ -101,23 +101,23 @@
               "context": null,
               "code": "var requestBody = {\n  \"article\": {\n    \"tagList\": [],\n    \"title\": \"Testing the api\",\n    \"description\": \"Testing the api\",\n    \"body\": \"Testing the api\"\n  }\n};\ncy.get('@token').then(function (token) {\n  cy.request({\n    url: Cypress.env('apiUrl') + 'articles/',\n    headers: {\n      'Authorization': 'Token ' + token\n    },\n    method: 'POST',\n    body: requestBody\n  }).then(function (res) {\n    expect(res.status).to.equal(200);\n  }); //delete the global feed latest post which is created\n  cy.contains(/Global Feed/i).click();\n  cy.get('.article-preview').first().click();\n  cy.get('.article-actions').contains('Delete Article').click(); //verify whether the title is actually delete from the API or Not\n  cy.request({\n    url: Cypress.env('apiUrl') + 'articles?limit=10&offset=0',\n    headers: {\n      'Authorization': 'Token ' + token\n    },\n    method: 'GET'\n  }).its('body').then(function (body) {\n    expect(body.articles[0].title).not.to.equal('Testing the api');\n  });\n  cy.contains(/Global Feed/i).click();\n});",
               "err": {},
-              "uuid": "b4156239-19b5-4c1d-9d87-d6dbb30ceff8",
-              "parentUUID": "9d8cd029-e486-4496-bb3c-b5a6e87c1e27",
+              "uuid": "3317f789-8c10-4b63-a0ef-5e129f44f5e8",
+              "parentUUID": "a48f7c45-6f34-41ac-b3c9-9f9645f6e5c6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "c87d8bbd-7ab7-4546-822c-a954f632fbc5",
-            "abe10000-7ef1-4744-9071-fdf72ef00c6a",
-            "cd1db557-a889-440e-8c6b-34c17a578c1a",
-            "b4156239-19b5-4c1d-9d87-d6dbb30ceff8"
+            "3e24f098-a2b1-4fa8-86b7-306faf5addeb",
+            "56b0d309-d3e3-4976-b1c6-9075446dd213",
+            "61bbe9e4-b906-4704-ad46-95245530461f",
+            "3317f789-8c10-4b63-a0ef-5e129f44f5e8"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 18294,
+          "duration": 16532,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000
@@ -141,7 +141,7 @@
       "options": {
         "quiet": false,
         "reportFilename": "mochawesome",
-        "saveHtml": true,
+        "saveHtml": false,
         "saveJson": true,
         "consoleReporter": "spec",
         "useInlineDiffs": false,
@@ -150,7 +150,13 @@
       "version": "6.2.2"
     },
     "marge": {
-      "options": null,
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/results/mochawesome",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
       "version": "5.2.0"
     }
   }
