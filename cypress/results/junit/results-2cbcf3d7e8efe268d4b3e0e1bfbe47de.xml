@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="19.9130" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-06-25T14:40:56" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Fully automated end to end testing suite" timestamp="2021-06-25T14:40:56" tests="4" time="19.9130" failures="0">
+    <testcase name="Fully automated end to end testing suite verify correct request and response" time="6.8350" classname="verify correct request and response">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="2.3880" classname="should show the tags as mentioned in the tags object">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="4.4700" classname="verify the gobal feed articles like count">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite delete the newly created articles" time="6.2200" classname="delete the newly created articles">
+    </testcase>
+  </testsuite>
+</testsuites>

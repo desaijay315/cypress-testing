@@ -1,82 +1,46 @@
 <?xml version="1.0"?>
 <testsuites>
-
-<testsuite name="Root Suite" timestamp="2021-06-23T14:02:08" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Fully automated end to end testing suite" timestamp="2021-06-23T14:02:08" tests="4" time="16.7270" failures="0">
+<testsuite name="Root Suite" timestamp="2021-06-25T11:39:42" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0"></testsuite>
+<testsuite name="Fully automated end to end testing suite" timestamp="2021-06-25T11:39:42" tests="12" time="74.3990" failures="0">
   
-  <testcase name="Fully automated end to end testing suite verify correct request and response" time="4.7150" classname="verify correct request and response"></testcase>
+  <testcase name="Fully automated end to end testing suite verify correct request and response" time="7.9230" classname="verify correct request and response"></testcase>
   
-  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="1.9100" classname="should show the tags as mentioned in the tags object"></testcase>
+  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="3.4470" classname="should show the tags as mentioned in the tags object"></testcase>
   
-  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="3.9980" classname="verify the gobal feed articles like count"></testcase>
+  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="6.0030" classname="verify the gobal feed articles like count"></testcase>
   
-  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="6.1040" classname="delete the newly created articles"></testcase>
+  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="10.3360" classname="delete the newly created articles"></testcase>
   
-</testsuite>
-
-<testsuite name="Root Suite" timestamp="2021-06-23T14:07:14" tests="0" file="cypress/integration/examples/BDD/blog.feature" time="0.0000" failures="0"></testsuite>
-<testsuite name="End to end Blog Site validation" timestamp="2021-06-23T14:07:14" tests="4" time="35.6460" failures="0">
+  <testcase name="Fully automated end to end testing suite verify correct request and response" time="4.8470" classname="verify correct request and response"></testcase>
   
-  <testcase name="End to end Blog Site validation Create a new article" time="11.6500" classname="Create a new article"></testcase>
+  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="3.5650" classname="should show the tags as mentioned in the tags object"></testcase>
   
-  <testcase name="End to end Blog Site validation Check the tags on the home page" time="5.0120" classname="Check the tags on the home page"></testcase>
+  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="4.8780" classname="verify the gobal feed articles like count"></testcase>
   
-  <testcase name="End to end Blog Site validation Verify the global feed article likes count" time="9.5000" classname="Verify the global feed article likes count"></testcase>
+  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="10.3400" classname="delete the newly created articles"></testcase>
   
-  <testcase name="End to end Blog Site validation Delete the newly created article" time="9.4840" classname="Delete the newly created article"></testcase>
+  <testcase name="Fully automated end to end testing suite verify correct request and response" time="5.5970" classname="verify correct request and response"></testcase>
   
-</testsuite>
-
-<testsuite name="Root Suite" timestamp="2021-06-23T14:03:26" tests="0" file="cypress/integration/examples/BDD/blog.feature" time="0.0000" failures="0"></testsuite>
-<testsuite name="End to end Blog Site validation" timestamp="2021-06-23T14:03:26" tests="4" time="23.8110" failures="0">
+  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="3.6570" classname="should show the tags as mentioned in the tags object"></testcase>
   
-  <testcase name="End to end Blog Site validation Create a new article" time="8.9830" classname="Create a new article"></testcase>
+  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="6.1920" classname="verify the gobal feed articles like count"></testcase>
   
-  <testcase name="End to end Blog Site validation Check the tags on the home page" time="3.3990" classname="Check the tags on the home page"></testcase>
-  
-  <testcase name="End to end Blog Site validation Verify the global feed article likes count" time="5.6640" classname="Verify the global feed article likes count"></testcase>
-  
-  <testcase name="End to end Blog Site validation Delete the newly created article" time="5.7650" classname="Delete the newly created article"></testcase>
+  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="7.6140" classname="delete the newly created articles"></testcase>
   
 </testsuite>
 
-<testsuite name="Root Suite" timestamp="2021-06-23T14:09:12" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Fully automated end to end testing suite" timestamp="2021-06-23T14:09:12" tests="4" time="21.3020" failures="0">
+<testsuite name="Root Suite" timestamp="2021-06-25T11:38:19" tests="0" file="cypress/integration/examples/BDD/blog.feature" time="0.0000" failures="0"></testsuite>
+<testsuite name="End to end Blog Site validation" timestamp="2021-06-25T11:38:19" tests="4" time="25.9520" failures="0">
   
-  <testcase name="Fully automated end to end testing suite verify correct request and response" time="9.7170" classname="verify correct request and response"></testcase>
+  <testcase name="End to end Blog Site validation Create a new article" time="9.8200" classname="Create a new article"></testcase>
   
-  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="1.8620" classname="should show the tags as mentioned in the tags object"></testcase>
+  <testcase name="End to end Blog Site validation Check the tags on the home page" time="3.1220" classname="Check the tags on the home page"></testcase>
   
-  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="3.0210" classname="verify the gobal feed articles like count"></testcase>
+  <testcase name="End to end Blog Site validation Verify the global feed article likes count" time="5.2690" classname="Verify the global feed article likes count"></testcase>
   
-  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="6.7020" classname="delete the newly created articles"></testcase>
-  
-</testsuite>
-
-<testsuite name="Root Suite" timestamp="2021-06-23T14:04:59" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0"></testsuite>
-<testsuite name="Fully automated end to end testing suite" timestamp="2021-06-23T14:04:59" tests="4" time="43.2450" failures="0">
-  
-  <testcase name="Fully automated end to end testing suite verify correct request and response" time="13.0150" classname="verify correct request and response"></testcase>
-  
-  <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="5.7590" classname="should show the tags as mentioned in the tags object"></testcase>
-  
-  <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="9.1910" classname="verify the gobal feed articles like count"></testcase>
-  
-  <testcase name="Fully automated end to end testing suite delete the newly created articles" time="15.2800" classname="delete the newly created articles"></testcase>
+  <testcase name="End to end Blog Site validation Delete the newly created article" time="7.7410" classname="Delete the newly created article"></testcase>
   
 </testsuite>
 
-<testsuite name="Root Suite" timestamp="2021-06-23T14:00:58" tests="0" file="cypress/integration/examples/BDD/blog.feature" time="0.0000" failures="0"></testsuite>
-<testsuite name="End to end Blog Site validation" timestamp="2021-06-23T14:00:58" tests="4" time="22.7550" failures="0">
-  
-  <testcase name="End to end Blog Site validation Create a new article" time="7.7700" classname="Create a new article"></testcase>
-  
-  <testcase name="End to end Blog Site validation Check the tags on the home page" time="3.5570" classname="Check the tags on the home page"></testcase>
-  
-  <testcase name="End to end Blog Site validation Verify the global feed article likes count" time="5.4930" classname="Verify the global feed article likes count"></testcase>
-  
-  <testcase name="End to end Blog Site validation Delete the newly created article" time="5.9350" classname="Delete the newly created article"></testcase>
-  
-</testsuite>
 
 </testsuites>

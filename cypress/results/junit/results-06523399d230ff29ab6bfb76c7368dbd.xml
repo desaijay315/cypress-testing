@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="74.3990" tests="12" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-06-25T11:39:42" tests="0" file="cypress/integration/examples/FullyAutomated.js" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="Fully automated end to end testing suite" timestamp="2021-06-25T11:39:42" tests="12" time="74.3990" failures="0">
+    <testcase name="Fully automated end to end testing suite verify correct request and response" time="7.9230" classname="verify correct request and response">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="3.4470" classname="should show the tags as mentioned in the tags object">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="6.0030" classname="verify the gobal feed articles like count">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite delete the newly created articles" time="10.3360" classname="delete the newly created articles">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite verify correct request and response" time="4.8470" classname="verify correct request and response">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="3.5650" classname="should show the tags as mentioned in the tags object">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="4.8780" classname="verify the gobal feed articles like count">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite delete the newly created articles" time="10.3400" classname="delete the newly created articles">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite verify correct request and response" time="5.5970" classname="verify correct request and response">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite should show the tags as mentioned in the tags object" time="3.6570" classname="should show the tags as mentioned in the tags object">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite verify the gobal feed articles like count" time="6.1920" classname="verify the gobal feed articles like count">
+    </testcase>
+    <testcase name="Fully automated end to end testing suite delete the newly created articles" time="7.6140" classname="delete the newly created articles">
+    </testcase>
+  </testsuite>
+</testsuites>

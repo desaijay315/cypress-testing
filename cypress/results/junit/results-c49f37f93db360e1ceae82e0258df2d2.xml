@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Mocha Tests" time="29.5500" tests="4" failures="0">
+  <testsuite name="Root Suite" timestamp="2021-06-25T13:04:49" tests="0" file="cypress/integration/examples/BDD/blog.feature" time="0.0000" failures="0">
+  </testsuite>
+  <testsuite name="End to end Blog Site validation" timestamp="2021-06-25T13:04:49" tests="4" time="29.5500" failures="0">
+    <testcase name="End to end Blog Site validation Create a new article" time="11.9900" classname="Create a new article">
+    </testcase>
+    <testcase name="End to end Blog Site validation Check the tags on the home page" time="3.9600" classname="Check the tags on the home page">
+    </testcase>
+    <testcase name="End to end Blog Site validation Verify the global feed article likes count" time="6.4690" classname="Verify the global feed article likes count">
+    </testcase>
+    <testcase name="End to end Blog Site validation Delete the newly created article" time="7.1310" classname="Delete the newly created article">
+    </testcase>
+  </testsuite>
+</testsuites>

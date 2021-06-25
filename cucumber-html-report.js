@@ -92,6 +92,7 @@ const addScreenshots = () => {
       : result.concat(currentValue), []);
   const screenshots = readdirRecursive(path.resolve(screenshotsDir)).filter(file => file.indexOf('.png') > -1);
   // Extract feature list from screenshot list
+  console.log(screenshots); process.exit(1)
   const featuresList = Array.from(new Set(screenshots.map(x => x.match(/[\w-_.]+\.feature/g)[0])));
   featuresList.forEach((feature) => {
     screenshots.forEach(screenshot => {

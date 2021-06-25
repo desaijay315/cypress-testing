@@ -28,7 +28,7 @@
             "name": "I open new article page",
             "result": {
               "status": "passed",
-              "duration": 6329000000
+              "duration": 5529000000
             }
           },
           {
@@ -57,7 +57,7 @@
             "name": "I create the new article",
             "result": {
               "status": "passed",
-              "duration": 758000000
+              "duration": 1003000000
             }
           },
           {
@@ -67,7 +67,7 @@
             "name": "Validate the new article created & the forms behaviour",
             "result": {
               "status": "passed",
-              "duration": 2851000000
+              "duration": 3523000000
             }
           }
         ]
@@ -92,7 +92,7 @@
             "name": "I open home page",
             "result": {
               "status": "passed",
-              "duration": 2949000000
+              "duration": 1820000000
             }
           },
           {
@@ -102,7 +102,7 @@
             "name": "I check the tags",
             "result": {
               "status": "passed",
-              "duration": 40000000
+              "duration": 47000000
             }
           },
           {
@@ -112,7 +112,7 @@
             "name": "validate the tags generated",
             "result": {
               "status": "passed",
-              "duration": 1095000000
+              "duration": 1374000000
             }
           }
         ]
@@ -137,7 +137,7 @@
             "name": "I open home page and go to global feed",
             "result": {
               "status": "passed",
-              "duration": 1470000000
+              "duration": 1635000000
             }
           },
           {
@@ -147,7 +147,7 @@
             "name": "I check the article count",
             "result": {
               "status": "passed",
-              "duration": 2077000000
+              "duration": 2120000000
             }
           },
           {
@@ -157,7 +157,7 @@
             "name": "I click on the like button",
             "result": {
               "status": "passed",
-              "duration": 437000000
+              "duration": 452000000
             }
           },
           {
@@ -167,7 +167,7 @@
             "name": "Then like count of the article should increment by one",
             "result": {
               "status": "passed",
-              "duration": 972000000
+              "duration": 1129000000
             }
           }
         ]
@@ -192,7 +192,7 @@
             "name": "I open home page and go to global feed",
             "result": {
               "status": "passed",
-              "duration": 1420000000
+              "duration": 2098000000
             }
           },
           {
@@ -202,7 +202,7 @@
             "name": "I click on the newly created article",
             "result": {
               "status": "passed",
-              "duration": 2379000000
+              "duration": 1993000000
             }
           },
           {
@@ -212,7 +212,7 @@
             "name": "I delete the article",
             "result": {
               "status": "passed",
-              "duration": 1330000000
+              "duration": 1115000000
             }
           },
           {
@@ -222,7 +222,7 @@
             "name": "validate the deleted article",
             "result": {
               "status": "passed",
-              "duration": 2212000000
+              "duration": 2614000000
             }
           }
         ]

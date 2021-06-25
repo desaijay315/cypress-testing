@@ -1,6 +1,7 @@
 {
     "defaultCommandTimeout": 40000,
     "pageLoadTimeout": 30000,
+    "screenshotsFolder": "screenshots",
     "env": {
       "url": "https://angular.realworld.io/",
       "apiUrl": "https://conduit.productionready.io/api/",
@@ -14,6 +15,7 @@
     "reporter": "cypress-multi-reporters",
     "reporterOptions": {
       "configFile": "reporter-config.json"
-    }
+    },
+    "projectId": "36e7px"
   }
   
